@@ -1,0 +1,131 @@
+:root {
+    --color-background: #161530;
+    --color-black: #ffffff;
+    --color-blackk: #6325ce;
+    --color-black-heavy: #000000;
+    --color-text: #4f4f4f;
+    --color-text-out: #90908e;
+    --color-primary: #1fc47a;
+    --color-green-black: #19945c;
+    --color-secondary: #fff2cc;
+    --color-white: #ffffff;
+    --color-red: #e74c3c;
+    --color-green: #2ecc71;
+    --color-separate: #cccccc;
+}
+*{
+
+}
+body{
+    background-color: var(--color-background);
+}
+
+.barra{
+    text-align: center;
+}
+
+.barra .container .logo img{
+    height: 100rem;
+}
+
+.contPrincipal{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contPrincipal .login-space{
+    background-color: #ffffff;
+    padding: 34px 40px;
+    border-radius: 20px;
+}
+
+.texto-titulo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form label{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+form .mb-3 button{
+    background-color: var(--color-white);
+}
+
+.input-group .btn .bi{
+    color: var(--color-black-heavy);
+}
+
+.form-text .bi{
+    color: var(--color-blackk);
+}
+
+#passwordHelp, #accessHelp{
+    color: var(--color-black-heavy);
+    font-weight: 500;
+}
+#helpDecoration{
+    text-decoration: underline;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao-login{
+    width: 100%;
+    font-weight: bold;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: solid 1px var(--color-green);
+}
+
+.botao-login:hover{
+    background-color: var(--color-green-black);
+    border: 1px solid var(--color-primary);
+    color: var(--color-white);
+}
+
+
+.btn-social {
+    width: 50px;
+}
+
+.btn-sm {
+    padding: 9px 15px !important;
+    border-radius: 15px !important;
+    font-size: 18px !important;
+}
+.btn-roxo {
+    background-color: var(--color-blackk);
+    color: var(--color-white);
+    border-radius: 20px;
+    padding: 0px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+}
+.btn-roxo:hover{
+    background-color: var(--color-white);
+    color: var(--color-blackk);
+    border: 1px solid var(--color-blackk);
+    transition: 0.4s;
+}
+.social-infos .title{
+    text-align: center;
+    font-weight: 600;
+}
+
+.saiba-mais{
+    margin-top: 8px;
+    text-align: center;
+}
