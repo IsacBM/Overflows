@@ -17,7 +17,8 @@
 
 }
 body{
-    background-color: var(--color-background);
+    background: rgb(22,21,48);
+    background: linear-gradient(35deg, rgba(22,21,48,1) 54%, rgba(25,23,60,1) 80%, rgba(27,25,70,1) 97%);
 }
 
 .barra{
@@ -128,4 +129,46 @@ form .mb-3 button{
 .saiba-mais{
     margin-top: 8px;
     text-align: center;
+}
+
+.imagem {
+    width: 570px;
+    height: 590px;
+    background:url("/src/imgs/logo-caistech.png");
+}
+.texto-imagem {
+    position: absolute;
+    padding: 10px 18px;
+    bottom: 58px;
+    border-radius: 20px;
+    background-color: var(--color-black);
+    color: var(--color-black-heavy);
+    box-shadow: 2px 2px 10px var(--color-primary);
+}
+
+.texto-imagem p{
+    margin: 0px;
+}
+.equipe-caistech{
+    color: var(--color-green);
+    font-weight: bold;
+    right: 0px;
+    display: flex;
+}
+
+.mensagem-equipe{
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.texto-imagem:after{ /*Triangulo*/
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--color-white);
+    bottom: -20px;
+    left: 10%;
 }
