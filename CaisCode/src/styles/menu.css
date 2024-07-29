@@ -36,7 +36,13 @@ body {
     padding: 0 1rem;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    transition: .5s
+    transition: .5s;
+}
+
+body, .principal{
+    /* #16151d;*/
+    background-color: #0f0f18;
+    color: var(--color-white);
 }
 
 a {
