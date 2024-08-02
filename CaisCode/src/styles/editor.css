@@ -99,8 +99,10 @@ textarea {
 }
 
 .caixas-laterais .custom-textarea{
-    background-color: #0b0a14;
+    background-color: #161424;
     color: var(--color-white);
+    border: #000000;
+    box-shadow: 0px 0px 4px #4723D9;
 }
 
 .text-light{

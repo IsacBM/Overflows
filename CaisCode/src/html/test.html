@@ -1,41 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Select with Icons</title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>D3.js Calendar Heatmap</title>
+    <link rel="stylesheet" type="text/css" href="/src/assets/heatmap/calendar-heatmap.css">
+  </head>
+  <body>
+    <div class="container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="/src/assets/heatmap/calendar-heatmap.js"></script>
+    <script type="text/javascript">
+      var now = moment().endOf('day').toDate();
+      var yearAgo = moment().startOf('day').subtract(1, 'year').toDate();
+      var chartData = d3.time.days(yearAgo, now).map(function (dateElement) {
+        return {
+          date: dateElement,
+          count: (dateElement.getDay() !== 0 && dateElement.getDay() !== 6) ? Math.floor(Math.random() * 60) : Math.floor(Math.random() * 10)
+        };
+      });
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  
-  <!-- Bootstrap-Select CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
-  
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-  <div class="container mt-5">
-    <select class="selectpicker" data-width="fit">
-      <option data-icon="fa fa-home"> Home</option>
-      <option data-icon="fa fa-user"> User</option>
-      <option data-icon="fa fa-envelope"> Email</option>
-    </select>
-  </div>
-
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
-  <!-- Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  
-  <!-- Bootstrap-Select JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-  
-  <script>
-    $(document).ready(function() {
-      $('.selectpicker').selectpicker();
-    });
-  </script>
-</body>
+      var heatmap = calendarHeatmap()
+                      .data(chartData)
+                      .selector('.container')
+                      .tooltipEnabled(true)
+                      .colorRange(['#f4f7f7', '#79a8a9'])
+                      .onClick(function (data) {
+                        console.log('data', data);
+                      });
+      heatmap();  // render the chart
+    </script>
+  </body>
 </html>

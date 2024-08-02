@@ -19,6 +19,7 @@
     <script src="/codemirror-5.65.17/mode/"></script>
     <script src="/codemirror-5.65.17/mode/php/"></script>
     <link rel="stylesheet" href="/codemirror-5.65.17/theme/material-darker.css">
+    <link rel="stylesheet" href="/src/themes/mocha.css">
     <script src="/codemirror-5.65.17/addon/edit/closebrackets.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/lint/lint.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/lint/python-lint.min.js"></script>
@@ -103,7 +104,7 @@
                     </div>
 
                     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                        <button type="button" title="Download do Código" class="btn btn-primary"><i class="bi bi-cloud-download"></i></button>
+                        <button type="button" title="Download do Código" id="downloadButton" class="btn btn-primary"><i class="bi bi-cloud-download"></i></button>
                         <button type="button" title="Cópiar o Código" id="copyButton" class="btn btn-secondary"><i class="bi bi-copy"></i></button>
                         <button type="button" title="Limpar o Editor" id="clearButton" class="btn btn-warning"><i class="bi bi-recycle"></i></button>
                     </div>
@@ -195,10 +196,10 @@
         
             // Exemplos de código para cada linguagem
             const languagesHelloWorld = {
-                c: '// CaisTech♥ - 2K26 - C\n#include <stdio.h>\nint main() {\n    printf("É o melhor e maior evento de tecnologia do sul do Piauí!");\n    return 0;\n}\n',
-                cpp: '// CaisTech♥ - 2K26 - C++\n#include <iostream>\nint main() {\n    std::cout << "É o melhor e maior evento de tecnologia do sul do Piauí!" << std::endl;\n    return 0;\n}\n',
-                Java: '// CaisTech♥ - 2K26 - Java\nclass Main {\n    public static void main(String[] args) {\n        System.out.println("É o melhor e maior evento de tecnologia do sul do Piauí!");\n    }\n}\n',
-                Python: '# CaisTech♥ - 2K26 - Python\ndef caisTech():\n    print("É o melhor e maior evento de tecnologia do sul do Piauí!")\ncaisTech()\n',
+                c: '// CaisTech♥ - 2K26 - C v17\n#include <stdio.h>\nint main() {\n    printf("É o melhor e maior evento de tecnologia do sul do Piauí!");\n    return 0;\n}\n',
+                cpp: '// CaisTech♥ - 2K26 - C++ v20\n#include <iostream>\nint main() {\n    std::cout << "É o melhor e maior evento de tecnologia do sul do Piauí!" << std::endl;\n    return 0;\n}\n',
+                Java: '// CaisTech♥ - 2K26 - Java 8\nclass Main {\n    public static void main(String[] args) {\n        System.out.println("É o melhor e maior evento de tecnologia do sul do Piauí!");\n    }\n}\n',
+                Python: '# CaisTech♥ - 2K26 - Python 3.12.4\ndef caisTech():\n    print("É o melhor e maior evento de tecnologia do sul do Piauí!")\ncaisTech()\n',
                 0: '',
             };
         
@@ -214,12 +215,26 @@
             var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
                 lineNumbers: true,
                 readOnly: true,
-                theme: "material-darker",
+                theme: "ctp-mocha",
                 scrollbarStyle: "null",
                 autoCloseBrackets: true,
                 gutters: ["CodeMirror-lint-markers"],
                 lint: true
             });
+
+            const extensionsMap = {
+                Python: 'py',
+                Java: 'java',
+                C: 'c',
+                "C++": 'cpp',
+            };
+
+            const fileNames = {
+                Python: "programa.py",
+                Java: "Main.java",
+                C: "main.c",
+                "C++": "main.cpp",
+            };
         
             function adjustEditorSize() {
                 var width = window.innerWidth;
@@ -276,6 +291,20 @@
         
             // Adicionar evento de clique ao botão para copiar o conteúdo do editor
             document.getElementById("copyButton").addEventListener("click", copyEditorContent);
+
+            // Função para baixar o conteúdo do editor
+            document.getElementById("downloadButton").addEventListener("click", function() {
+                const selectedLanguage = languageSelector.options[languageSelector.selectedIndex].text;
+                const fileName = fileNames[selectedLanguage] || "programa.py";
+                const fileContent = editor.getValue();
+                const element = document.createElement("a");
+                element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(fileContent));
+                element.setAttribute("download", fileName);
+                element.style.display = "none";
+                document.body.appendChild(element);
+                element.click();
+                document.body.removeChild(element);
+            });
         </script>
         
     </body>

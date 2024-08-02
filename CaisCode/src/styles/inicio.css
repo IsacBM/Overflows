@@ -1,0 +1,275 @@
+:root {
+    --header-height: 3.2rem;
+    --nav-width: 68px;
+    --first-color: #4723D9;
+    --first-color-light: #AFA5D9;
+    --white-color: #F7F6FB;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100;
+    --color-background: #161530;
+    --color-black: #ffffff;
+    --color-blackk: #6325ce;
+    --color-black-heavy: #000000;
+    --color-text: #4f4f4f;
+    --color-text-out: #90908e;
+    --color-primary: #1fc47a;
+    --color-green-black: #19945c;
+    --color-secondary: #fff2cc;
+    --color-white: #ffffff;
+    --color-red: #e74c3c;
+    --color-green: #2ecc71;
+    --color-separate: #cccccc;
+}
+.row {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 6.6px;
+}
+.lado-1 {
+    flex:4.6; /* Aumenta o tamanho da área do editor */
+    row-gap: 7px;
+}
+
+.lado-1 .info-perfil .part-1 .titulo-equipe h2{
+    font-weight: bold;
+}
+
+.lado-1 .info-perfil .part-1 .bx, .grafico-perfil .bx{
+    font-size: 24px;
+    vertical-align: middle; /* alinha o ícone verticalmente no centro do texto */
+}
+.parte-2 .bx{
+    font-size: 24px;
+    vertical-align: middle; /* alinha o ícone verticalmente no centro do texto */
+}
+
+.lado-1 .info-perfil .part-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px 0px;
+}
+
+.grafico #heatmap2{
+    color: var(--color-white);
+}
+
+.lado-1 .info-perfil .part-1 .nomes-da-dupla, .data, .tempo-on, .linguage{
+    color: #6325ce;
+    font-weight: bold;
+}
+.grafico-perfil .grafico-titulo{
+    display: flex;
+    justify-content: center;
+    margin: 3px 0px;
+    gap: 4px;
+}
+.grafico-perfil .grafico{
+    display: flex;
+    justify-content: center;
+}
+
+.lado-1 .grafico-perfil .ifpi{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: var(--color-text-out);
+}
+.lado-1 .imagem-perfil{
+    border: 1px solid #2ecc71;
+    border-radius: 100%;
+}
+
+#equipes{
+    background-image: -webkit-linear-gradient(var(--color-primary), var(--color-green-black));
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: black;
+    font-weight: bold;
+}
+
+.lado-2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    align-content: space-around;
+}
+
+.info-perfil{
+    background-color: #161424;
+    border-radius: 20px;
+}
+
+.clima{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161424;
+    border-radius: 20px;
+}
+.clima img{
+    width: 3.5rem;
+}
+
+.cidade, .modo-clima{
+    font-size: 20px;
+}
+
+.temp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.temperatura-num{
+    font-size: 36px;
+}
+
+.calendario-container{
+    display: flex;
+    justify-content: center;
+    background-color: #161424;
+    border-radius: 20px;
+    font-size: 14px;
+}
+#calendario{
+    display: grid;
+    grid-template-columns: repeat(0, 1px);
+    grid-template-rows: 14px auto 0px;
+    gap: 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 2px;
+    text-align: center;
+}
+th{
+    background-color: #351164;
+    color: #ccc;
+    border: none;
+}
+.today{
+    background-color: var(--color-primary);
+    border-radius: 100%;
+}
+#month-year{
+    grid-column: 1/-1;
+}
+.highlight{
+    background-color: #351164;
+    border-radius: 100%;
+}
+.titulo-calendario{
+    display: flex;
+    padding-top: 2px;
+    justify-content:space-between;
+    font-weight: bold;
+    font-size: 16px;
+}
+.titulo-calendario .ano{
+    color: var(--color-primary);
+}
+
+.radio-ifpi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161424;
+    border-radius: 20px;
+}
+.card__wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.card__btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .card__btn path {
+    fill: var(--color-white);
+  }
+  
+  .card__btn-play {
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card__btn-play path {
+    fill: #161424;
+  }
+.logo-ifpi-radio img{
+    background-color: #351164;
+    border-radius: 20px;
+    width: 90px;
+    padding: 1px 0px;
+    margin: 4px 0px;
+}
+
+.grafico-perfil{
+    background-color: #161424;
+    border-radius: 20px;
+}
+
+.parte-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.espaco-conquistas {
+    display: flex;
+    height: 74px;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161530;
+    border-radius: 20px;
+    overflow: hidden; /* Garante que sos badges fiquem dentro do contêiner */
+}
+
+.nav-button {
+    background-color: transparent;
+    color: var(--color-blackk);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.badges {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin: 0 10px;
+}
+
+.badge {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0; /* Impede que os badges encolham */
+}
