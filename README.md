@@ -16,31 +16,35 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 
 ## Front-End: Missões de Partes...
 
-### Página Inícial:
+### • Página Inícial:
 
 <div align="center">
  <img src="https://github.com/IsacBM/CaisCode/blob/main/readme-imgs/Tela-Inicial.PNG?raw=true" alt="Imagem-Inicio">
 </div>
 
-### Página de Classificações/Rank:
+#### Ações:
+- Configurar a API de Previsão do Tempo <br>
+- Configurar o heatmap
+
+### • Página de Classificações/Rank:
 
 <div align="center">
  <img src="" alt="Imagem-Inicio">
 </div>
 
-### Página de Questões:
+### • Página de Questões:
 
 <div align="center">
  <img src="" alt="Imagem-Inicio">
 </div>
 
-### Página do Editor:
+### • Página do Editor:
 
 <div align="center">
  <img src="https://github.com/IsacBM/CaisCode/blob/main/readme-imgs/Tela-do-editor.PNG?raw=true" alt="Imagem-Inicio">
 </div>
 
-### Página das Bibliotecas:
+### • Página das Bibliotecas:
 
 <div align="center">
  <img src="" alt="Imagem-Inicio">
