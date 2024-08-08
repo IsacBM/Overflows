@@ -19,7 +19,15 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 ### • Página Inícial:
 
 <div align="center">
- <img src="https://github.com/IsacBM/CaisCode/blob/main/readme-imgs/Tela-Inicial.PNG?raw=true" alt="Imagem-Inicio">
+ <img src="https://github.com/IsacBM/CaisCode/blob/main/readme-imgs/Tela-de-Login.PNG?raw=true" alt="Imagem-de-login">
+ <p>Página de Login - By @IsacBM</p>
+</div>
+
+### • Página Inícial:
+
+<div align="center">
+ <img src="https://github.com/IsacBM/CaisCode/blob/main/readme-imgs/Tela-Inicial.PNG?raw=true" alt="Imagem-de-inicio">
+ <p>Página Inicial - By @IsacBM</p>
 </div>
 
 #### Ações:
@@ -30,24 +38,28 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 
 <div align="center">
  <img src="" alt="Imagem-Inicio">
+ <p>Página de Classificações - By @IsacBM</p>
 </div>
 
 ### • Página de Questões:
 
 <div align="center">
- <img src="" alt="Imagem-Inicio">
+ <img src="https://github.com/IsacBM/CaisCode/blob/main/readme-imgs/tela-de-quest%C3%B5es.PNG?raw=true" alt="Imagem-Inicio">
+ <p>Página de Questões - By @IsacBM</p>
 </div>
 
 ### • Página do Editor:
 
 <div align="center">
  <img src="https://github.com/IsacBM/CaisCode/blob/main/readme-imgs/Tela-do-editor.PNG?raw=true" alt="Imagem-Inicio">
+ <p>Página do Editor de Código - By @IsacBM</p>
 </div>
 
 ### • Página das Bibliotecas:
 
 <div align="center">
  <img src="" alt="Imagem-Inicio">
+ <p>Página de Bibliotecas - By @IsacBM</p>
 </div>
 
 ## Contribuidores:
