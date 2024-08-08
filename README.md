@@ -30,9 +30,12 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
  <p>Página Inicial - By @IsacBM</p>
 </div>
 
-#### Ações:
-- Configurar a API de Previsão do Tempo <br>
-- Configurar o heatmap
+### Realizar antes da Implementação:
+
+| Ações | Configurações | Classe | ID | Finalizado |
+| --- | :---: | :---: | :---: | :---: |
+| `API - Previsão do Tempo` | Configurar a leitura do JSON e adicionar a página | class="clima" | id="temperatura-dia" | Não |
+| `Heatmap` | Configurar o heatmap para a leitura de questões respondidas | class="" | id="" | Não |
 
 ### • Página de Classificações/Rank:
 
