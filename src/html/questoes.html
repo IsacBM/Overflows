@@ -35,7 +35,7 @@
                 <div> 
                   <a href="#" class="nav_logo"> <i class='bx bx-equalizer nav_logo-icon'></i> <span class="nav_logo-name">CaisCode</span> </a>
                     <div class="nav_list">
-                        <a href="#" class="nav_link active">
+                        <a href="#" class="nav_link">
                             <i class='bx bx-grid-alt nav_icon'></i>
                             <span class="nav_name">Inicio</span>
                         </a>
@@ -45,7 +45,7 @@
                             <span class="nav_name">Classificações</span>
                         </a>
 
-                        <a href="#" class="nav_link">
+                        <a href="#" class="nav_link active">
                             <i class='bx bxs-balloon nav_icon'></i>
                             <span class="nav_name">Questões</span>
                         </a>
@@ -75,21 +75,124 @@
         <div class="principalContainer">
             <div class="row conteudoPagina">
                 <div class="col dados-equipe">
-                    <div class="grafico-questoes"></div>
-                    <div class="pontuacao">475</div>
-                    <div class="questoes-incorretas"></div>
+                    <div class="grafico-questoes">
+
+                        <div class="barra-de-progresso less" style="--color: #6325ce; --value:40"><!-- O less funciona do 50 para baixo, quando passar pode apagar o less, ou seja qtn pontos < 50, utiliza o less, caso a qtn de respostas for > 50 tira o less e deixa só a barra-->
+                            <h3>40<span>%</span></h3>
+                            <p>Finalizado</p>
+                        </div>
+                    </div>
+
+                    <div class="rank-semanal">
+                        <div class="titulo-rank">
+                            <h4>Top 3 - Rank</h4>
+                        </div>
+                        <div class="equipe1 equipes">
+                            <img src="/src/imgs/medalha-ouro.png" alt="">
+                            <span><a href="#"><span id="equipe-semanal1">Overflows</span></a> - </span>
+                            <span>100 Pts</span>
+                        </div>
+                        <div class="equipe2 equipes">
+                            <img src="/src/imgs/medalha-prata.png" alt="">
+                            <span><a href="#"><span id="equipe-semanal1">Fulanos</span></a> - </span>
+                            <span>90 Pts</span>
+                        </div>
+                        <div class="equipe3 equipes">
+                            <img src="/src/imgs/medalha-bronze.png" alt="">
+                            <span><a href="#"><span id="equipe-semanal1">Sicranos</span></a> - </span>
+                            <span>70 Pts</span>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="submissoes">
+                        <span class="erro-alert"><i class='bx bx-error'></i></span>
+                        <span>Envios Incorretos</span>
+                        <span class="erros"><span>26</span>/10</span>
+                    </div>
+                    
                 </div>
 
                 <div class="col lista-de-questoes">
-                    <div class="questao1">
-                        <h2>Dê um Oii para a Plataforma!</h2>
+                    <div class="questao">
+                        <a href="#"><h2>Dê um Oii para a Plataforma!</h2></a>
+                        <p>Crie um código simples na linguagem que preferir para cumprimentar a plataforma!🖖🏽</p>
+                        <div class="info-questoes">
+
+                            <div class="info-pessoas">
+                                <div class="criador">
+                                    <span title="Criador"><i class='bx bxs-id-card'></i> <a href="#"><span>Por IsacBM</span></a></span>
+                                </div>
+                                <span title="Envios Corretos"><i class='bx bxs-paper-plane'></i> <span class="respostas">350</span> Envios Corretos</span>
+                            </div>
+                            
+                            <div class="infos-gerais">
+                                <div class="tags">
+                                    <span class="tag">Boas Vindas</span>
+                                </div>
+                                <div class="nivel facil">
+                                    <span>Fácil</span>
+                                </div>
+                                <div class="qtn-pontos">
+                                    <span>+5 pts</span>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="questao2">
-                        <h2>Soma entre duas variaveis</h2>
+                    <div class="questao">
+                        <a href="#"><h2>Angry Ducks</h2></a>
+                        <p>Ajude os Duckneses a ganhar a guerra contra os Nlogoneses através de um código e patos!🦆⚔️</p>
+                        <div class="info-questoes">
+
+                            <div class="info-pessoas">
+                                <div class="criador">
+                                    <span title="Criador"><i class='bx bxs-id-card'></i> <a href="#"><span>Por IsacBM</span></a></span>
+                                </div>
+                                <span title="Envios Corretos"><i class='bx bxs-paper-plane'></i> <span class="respostas">130</span> Envios Corretos</span>
+                            </div>
+                            
+                            <div class="infos-gerais">
+                                <div class="tags">
+                                    <span class="tag">Matématica</span>
+                                </div>
+                                <div class="nivel intermediario">
+                                    <span>Intermédiario</span>
+                                </div>
+                                <div class="qtn-pontos">
+                                    <span>+25 pts</span>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="questao3">
-                        <h2>Questão 3</h2>
+                    <div class="questao">
+                        <a href="#"><h2>Digitando no Telefone Celular</h2></a>
+                        <p>Pesquisadores precisam da sua genialidade para construir uma nova tecnologia!👩🏽‍🔬🔍</p>
+                        <div class="info-questoes">
+
+                            <div class="info-pessoas">
+                                <div class="criador">
+                                    <span title="Criador"><i class='bx bxs-id-card'></i> <a href="#"><span>Por IsacBM</span></a></span>
+                                </div>
+                                <span title="Envios Corretos"><i class='bx bxs-paper-plane'></i> <span class="respostas">21</span> Envios Corretos</span>
+                            </div>
+                            
+                            <div class="infos-gerais">
+                                <div class="tags">
+                                    <span class="tag">Strings</span>
+                                </div>
+                                <div class="nivel dificil">
+                                    <span>Dificil</span>
+                                </div>
+                                <div class="qtn-pontos">
+                                    <span>+50 pts</span>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+
                 </div>
             </div>
             
