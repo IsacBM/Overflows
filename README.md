@@ -40,7 +40,7 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 ### • Página de Classificações/Rank:
 
 <div align="center">
- <img src="" alt="Imagem-Inicio">
+ <img src="https://github.com/IsacBM/CaisCode/blob/main/readme-imgs/Tela-de-classificacao.png?raw=true" alt="Imagem-Classificacao">
  <p>Página de Classificações - By @IsacBM</p>
 </div>
 
