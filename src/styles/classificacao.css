@@ -1,0 +1,100 @@
+:root {
+    --header-height: 3.2rem;
+    --nav-width: 68px;
+    --first-color: #4723D9;
+    --first-color-light: #AFA5D9;
+    --white-color: #F7F6FB;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100;
+    --color-background: #161530;
+    --color-black: #ffffff;
+    --color-blackk: #6325ce;
+    --color-black-heavy: #000000;
+    --color-text: #4f4f4f;
+    --color-text-out: #90908e;
+    --color-primary: #1fc47a;
+    --color-green-black: #19945c;
+    --color-secondary: #fff2cc;
+    --color-white: #ffffff;
+    --color-red: #e74c3c;
+    --color-green: #2ecc71;
+    --color-separate: #cccccc;
+}
+
+.principal .header-classificacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.principal .header-classificacao{
+    margin-top: 80px;
+    background-color: #161424;
+    border-radius: 20px;
+}
+
+.principal .tabela-classificados{
+    margin-top: 14px;
+    height: calc(100vh - 191px - 10px); /* 100vh é a altura total da tela, subtraída das margens e do padding */
+    background-color: #161424;
+    border-radius: 20px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.principal .menu-calssificacao .titulo{
+    font-weight: bold;
+    font-size: 38px;
+    display: flex;
+    align-items: center;align-content: center;
+}
+
+.principal .menu-calssificacao .titulo .bx{
+    font-size: 48px;
+    vertical-align:sub;
+    margin-right: 8px;
+    color: rgb(211, 166, 17);
+    text-shadow: 0px 0px 10px rgb(211, 166, 17);
+}
+
+.principal .menu-calssificacao .tabela-classificados{
+    padding: 20px 40px;
+    color: var(--color-white);
+}
+
+.principal .menu-calssificacao .tabela-classificados .table{
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.principal .menu-calssificacao .buscar-periodo .btn{
+    background-color: #6325ce;
+    color: var(--color-white);
+    border-radius: 20px;
+    border: #6325ce;
+}
+
+.principal .menu-calssificacao .buscar-periodo .btn:hover{
+    background-color: #4c1ca0;
+    color: var(--color-white);
+    border-radius: 20px;
+    border: #6325ce;
+}
+
+.tabela-classificados .table .pontos{
+    font-size: 20px;
+    text-shadow: #161530 0px 0px 20px;
+}
+
+.tabela-classificados .table .redes-equipe a{
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.principal .menu-calssificacao .tabela-classificados .table tr{
+    vertical-align: middle;
+}

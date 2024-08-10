@@ -4,11 +4,12 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>CaisCode - </title>
+    <title>CaisCode - Classificações</title>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
     <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="/src/imgs/favicon-caiscode.png" type="image/x-icon">
     <link rel="stylesheet" href="/src/styles/menu.css">
+    <link rel="stylesheet" href="/src/styles/classificacao.css">
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 </head>
 
@@ -34,12 +35,12 @@
                 <div> 
                   <a href="#" class="nav_logo"> <i class='bx bx-equalizer nav_logo-icon'></i> <span class="nav_logo-name">CaisCode</span> </a>
                     <div class="nav_list">
-                        <a href="#" class="nav_link active">
+                        <a href="#" class="nav_link">
                             <i class='bx bx-grid-alt nav_icon'></i>
                             <span class="nav_name">Inicio</span>
                         </a>
 
-                        <a href="#" class="nav_link">
+                        <a href="#" class="nav_link active">
                             <i class='bx bx-trophy nav_icon'></i>
                             <span class="nav_name">Classificações</span>
                         </a>
@@ -71,17 +72,98 @@
         </div>
 
         <!--Container Main start-->
-        <div class="height-100 bg-light">
-            <h4>As partes necessariasasssa</h4>
-
-
-            <footer>
-                <div class="credits">
-                    <div class="logo-ifpi">
-                        <img src="" alt="">
+        <div class="principal">
+            
+            <div class="menu-calssificacao">
+                <div class="header-classificacao">
+                    <div class="titulo">
+                        <span><i class='bx bxs-crown'></i></span>
+                        <span> Tabela de Classificação</span>
+                    </div>
+                    <div class="buscar-periodo">
+                        <div class="input-group input-group-lg" style="width: 400px;">
+                            <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                <option value="1">Equipe CaisCode - 2026</option>
+                                <option value="2">CaisTech 2026 - Maratona</option>
+                            </select>
+                            <button class="btn btn-outline-secondary" type="button"><i class='bx bx-search'></i> Buscar</button>
+                        </div>
                     </div>
                 </div>
-            </footer>
+                <div class="tabela-classificados">
+                    <table class="table table-bordered ">
+                        <thead>
+                          <tr style="text-align: center; background-color: rgb(247, 247, 247); color: #161530;">
+                            <th scope="col" style="width: 100px;">Posição</th>
+                            <th scope="col" style="width: 360px;">Equipe</th>
+                            <th scope="col" style="width: 240px;">Integrantes</th>
+                            <th scope="col">Ano</th>
+                            <th scope="col">Ínsignias</th>
+                            <th scope="col">Pontuação</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr style="text-align: center; background: linear-gradient(45deg, #bf7600, #d69122, #eba73c)">
+                            <th scope="row " style="text-align: center;"><img src="/src/imgs/medalha-ouro.png" height="60px" alt=""></th>
+                            <td class="equipe">Overflows</td>
+                            <td class="redes-equipe"><a href="#">@isacbm_</a> <a href="#">@diogobruno</a></td>
+                            <td>Cais-2026</td>
+                            <td></td>
+                            <td class="pontos">1000Pts</td>
+                          </tr>
+                          <tr style="text-align: center; background: linear-gradient(45deg, #455f63, #a4c0b5)">
+                            <th scope="row"><img src="/src/imgs/medalha-prata.png" height="60px" alt=""></th>
+                            <td>Fulano</td>
+                            <td class="redes-equipe"><a href="#">@alguemai</a> <a href="#">@maisoutro</a></td>
+                            <td>Cais-2026</td>
+                            <td></td>
+                            <td class="pontos">850Pts</td>
+                          </tr>
+                          <tr style="text-align: center; background: linear-gradient(45deg, #673208, #db6c2b);">
+                            <th scope="row"><img src="/src/imgs/medalha-bronze.png" height="60px" alt=""></th>
+                            <td>Sicrano</td>
+                            <td class="redes-equipe"><a href="#">@alguemai</a> <a href="#">@maisoutro</a></td>
+                            <td>Cais-2026</td>
+                            <td></td>
+                            <td class="pontos">700Pts</td>
+                          </tr>
+                          <tr style="text-align: center;">
+                            <th scope="row">4</th>
+                            <td>Sicrano</td>
+                            <td><a href="#">@alguemai</a> <a href="#">@maisoutro</a></td>
+                            <td>Cais-2026</td>
+                            <td></td>
+                            <td>650Pts</td>
+                          </tr>
+                          <tr style="text-align: center;">
+                            <th scope="row">5</th>
+                            <td>Equipe5</td>
+                            <td><a href="#">@alguemai</a> <a href="#">@maisoutro</a></td>
+                            <td>Cais-2026</td>
+                            <td></td>
+                            <td>500Pts</td>
+                          </tr>
+                          <tr style="text-align: center;">
+                            <th scope="row">6</th>
+                            <td>Equipe6</td>
+                            <td><a href="#">@alguemai</a> <a href="#">@maisoutro</a></td>
+                            <td>Cais-2026</td>
+                            <td></td>
+                            <td>0Pts</td>
+                          </tr>
+                          <tr style="text-align: center;">
+                            <th scope="row">7</th>
+                            <td>Equipe7</td>
+                            <td><a href="#">@alguemai</a> <a href="#">@maisoutro</a></td>
+                            <td>Cais-2026</td>
+                            <td></td>
+                            <td>0Pts</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+            </div>
 
         </div>
         <!--Container Main end-->
