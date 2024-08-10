@@ -1,6 +1,9 @@
 # Documentação: CaisCode
 > Status do Projeto: Em Andamento...
 
+[Licença MIT do Projeto](./LICENSE)
+
+
 O Projeto **`CaisCode`** foi idealizado para a maratona de programação realizada durante o evento do CaisTech, promovido pelo IFPI - Campus Floriano. O objetivo principal do CaisCode é proporcionar um ambiente desafiador e colaborativo para estudantes de programação, incentivando o desenvolvimento de habilidades técnicas e a criatividade na resolução de problemas.
 
 ## APIs Utilizadas:
@@ -81,7 +84,6 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 | :---: |
 
 </div>
-
 
 <h4 align="center">
 <strong>#CaisTech</strong>💙 <br>
