@@ -14,9 +14,9 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 
 ---
 
-## Front-End: Missões de Partes...
+## Componentes de Interface:
 
-### • Página Inícial:
+### • Página de Login:
 
 <div align="center">
  <img src="https://github.com/IsacBM/CaisCode/blob/main/readme-imgs/Tela-de-Login.PNG?raw=true" alt="Imagem-de-login">
@@ -65,6 +65,15 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
  <p>Página de Bibliotecas - By @IsacBM</p>
 </div>
 
+## Checklist de Funcionalidades
+
+| Funcionalidade | Status |
+| --- | --- |
+| Login de usuário | Concluído |
+| Previsão do tempo | Em desenvolvimento |
+| Editor de código | Concluído |
+
+
 ## Contribuidores:
 <div align="center">
  
@@ -72,6 +81,7 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 | :---: |
 
 </div>
+
 
 <h4 align="center">
 <strong>#CaisTech</strong>💙 <br>
