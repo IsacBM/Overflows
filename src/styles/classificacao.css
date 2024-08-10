@@ -69,6 +69,7 @@
     font-weight: bold;
     font-size: 18px;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .principal .menu-calssificacao .buscar-periodo .btn{
@@ -84,7 +85,9 @@
     border-radius: 20px;
     border: #6325ce;
 }
-
+.table-bordered{
+    border-radius: 20px;
+}
 .tabela-classificados .table .pontos{
     font-size: 20px;
     text-shadow: #161530 0px 0px 20px;
