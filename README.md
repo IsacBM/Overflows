@@ -66,16 +66,13 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 <div align="center">
  <img src="" alt="Imagem-Inicio">
  <p>Página de Bibliotecas - By @IsacBM</p>
-</div>
+ <h3>Documentações das Linguagens</h3>
 
-## Checklist de Funcionalidades
-
-| Funcionalidade | Status |
+| Site | Endereço |
 | --- | --- |
-| Login de usuário | Concluído |
-| Previsão do tempo | Em desenvolvimento |
-| Editor de código | Concluído |
-
+| devdocs.io | https://devdocs.io/python~3.12/reference/index |
+| w3schools.com | https://www.w3schools.com/python/python_lists_methods.asp |
+</div>
 
 ## Contribuidores:
 <div align="center">
