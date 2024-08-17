@@ -48,7 +48,8 @@
     font-weight: bold;
     font-size: 38px;
     display: flex;
-    align-items: center;align-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .principal .menu-calssificacao .titulo .bx{

@@ -1,0 +1,17 @@
+.principal .conteudo{
+    margin-top: 80px;
+    margin-right: 0.01vw;
+}
+
+.principal .conteudo .apoio-externo{
+    background-color: #161424;
+    height: calc(100vh - 191px - 10px); /* 100vh é a altura total da tela, subtraída das margens e do padding */
+    border-radius: 20px;
+    column-gap: 10px;
+}
+.principal .conteudo .apoio-proprio{
+    background-color: #161424;
+    border-radius: 20px;
+    flex:3.4; /* Aumenta o tamanho da área do editor */
+    margin-left: 10px;
+}
