@@ -77,8 +77,9 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 ## Contribuidores:
 <div align="center">
  
-|  [<img src="https://avatars.githubusercontent.com/u/91500212?v=4" width=115><br><sub>Isac B. Matos</sub>](https://github.com/IsacBM) |
-| :---: |
+|  [<img src="https://avatars.githubusercontent.com/u/91500212?v=4" width=115><br><sub>Isac B. Matos</sub>](https://github.com/IsacBM) | [<img src="https://instagram.fflb1-1.fna.fbcdn.net/v/t51.2885-19/351439225_632948862052139_3662921942005037604_n.jpg?_nc_ht=instagram.fflb1-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=2aYpLBYQLK4Q7kNvgEKKX4n&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYB2RUxLNHmJDxXgB1fae8Vu96JUqFZWxmvoW9ofs-zTfA&oe=66CD39BD&_nc_sid=8f1549" width=115><br><sub>Kassandra Maria</sub>](https://github.com/IsacBM) | [<img src="https://avatars.githubusercontent.com/u/157860235?v=4" width=115><br><sub>Diogo B. Amorim</sub>](https://github.com/IsacBM) | [<img src="https://avatars.githubusercontent.com/u/168697328?v=4" width=115><br><sub>Priscila Freitas</sub>](https://github.com/IsacBM) |
+| :---: | :---: | :---: | :---: |
+
 
 </div>
 
