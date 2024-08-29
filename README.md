@@ -1,9 +1,9 @@
-# Documentação: CaisCode
+# Documentação: OverFlows
 > Status do Projeto: Em Andamento...
 
 [Licença MIT do Projeto](./LICENSE)
 
-
+### Alterar depois:
 O Projeto **`CaisCode`** foi idealizado para a maratona de programação realizada durante o evento do CaisTech, promovido pelo IFPI - Campus Floriano. O objetivo principal do CaisCode é proporcionar um ambiente desafiador e colaborativo para estudantes de programação, incentivando o desenvolvimento de habilidades técnicas e a criatividade na resolução de problemas.
 
 ## APIs Utilizadas:
@@ -14,6 +14,70 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 | `Judge0` | Sistema de execução de código Open-Source | Ainda Não | https://judge0.com/ |
 | `Open-Meteo` | API de previsão do tempo | Ainda Não | https://open-meteo.com/ |
 | `Heatmap` | Calendário Mapa de Calor(Estilo Github) Open-Source | Sim | https://github.com/tbaeg/calendar-heatmap-mini |
+
+---
+
+### Configuração do Judge0 CE: Passo a Passo - (API de Verificação)
+
+**Ambiente**: `PowerShell`
+
+1. **Instalar o Docker**:
+
+    Antes de começar, certifique-se de que o Docker está instalado no seu sistema. Se ainda não estiver, siga os passos abaixo:
+    - Visite o [site oficial do Docker](https://www.docker.com/get-started) e baixe a versão correspondente ao seu sistema operacional.
+    - Siga as instruções de instalação fornecidas pelo site.
+    - Após a instalação, verifique se o Docker está funcionando corretamente executando o comando:
+   <br>
+
+    ```powershell
+    docker --version
+    ```
+
+2. **Baixar o Arquivo do Judge0**:
+
+    ```powershell
+    Invoke-WebRequest -Uri "https://github.com/judge0/judge0/releases/download/v1.13.1/judge0-v1.13.1.zip" -OutFile ".\judge0-v1.13.1.zip"
+    ```
+
+3. **Descompactar o Arquivo**:
+
+    ```powershell
+    Expand-Archive -Path .\judge0-v1.13.1.zip -DestinationPath .\judge0-v1.13.1
+    ```
+
+4. **Gerar Senha para Redis**:
+
+    Visite [este site](https://www.random.org/passwords/?num=1&len=32&format=plain&rnd=new) para gerar uma senha aleatória.
+
+5. **Configurar Senha do Redis**:
+
+    Use a senha gerada para atualizar a variável `REDIS_PASSWORD` no arquivo `judge0.conf`.
+
+6. **Gerar Senha para PostgreSQL**:
+
+    Visite novamente [este site](https://www.random.org/passwords/?num=1&len=32&format=plain&rnd=new) para gerar outra senha aleatória.
+
+7. **Configurar Senha do PostgreSQL**:
+
+    Use a nova senha gerada para atualizar a variável `POSTGRES_PASSWORD` no arquivo `judge0.conf`.
+
+8. **Iniciar os Serviços**:
+
+    Execute os comandos abaixo para iniciar os serviços e aguarde alguns segundos para garantir que tudo esteja pronto:
+
+    ```powershell
+    cd judge0-v1.13.1
+    docker-compose up -d db redis
+    Start-Sleep -Seconds 10
+    docker-compose up -d
+    Start-Sleep -Seconds 5
+    ```
+
+9. **Acessar a Instância do Judge0 CE**:
+
+    Sua instância do Judge0 CE v1.13.1 está agora em funcionamento. Para acessar a documentação e testar a API, visite: [http://localhost:2358/docs](http://localhost:2358/docs).
+
+
 
 ---
 
