@@ -5,8 +5,9 @@
 
 ## Acesso Rápido:
 
-[APIs Utilizadas](#apis-utilizadas) <br>
-[Ir para Configuração do Judge0 CE](##configuração-do-judge0-ce)
+- [APIs Utilizadas](#apis-utilizadas) <br>
+- [Configuração do Judge0 CE](#configuração-do-judge0-ce-v1131-2024-04-18-passo-a-passo---api-de-verificação) <br>
+- [Colaboradores](#contribuidores)
 
 
 ### Alterar depois:
