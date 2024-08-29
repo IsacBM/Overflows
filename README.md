@@ -1,7 +1,13 @@
 # Documentação: OverFlows
 > Status do Projeto: Em Andamento...
 
-[Licença MIT do Projeto](./LICENSE)
+[Licença MIT do Projeto](./LICENSE) (alterar depois)
+
+## Acesso Rápido:
+
+[APIs Utilizadas](#apis-utilizadas) <br>
+[Ir para Configuração do Judge0 CE](##configuração-do-judge0-ce)
+
 
 ### Alterar depois:
 O Projeto **`CaisCode`** foi idealizado para a maratona de programação realizada durante o evento do CaisTech, promovido pelo IFPI - Campus Floriano. O objetivo principal do CaisCode é proporcionar um ambiente desafiador e colaborativo para estudantes de programação, incentivando o desenvolvimento de habilidades técnicas e a criatividade na resolução de problemas.
@@ -17,18 +23,18 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 
 ---
 
-### Configuração do Judge0 CE: Passo a Passo - (API de Verificação)
+### Configuração do Judge0 CE v1.13.1 (2024-04-18): Passo a Passo - (API de Verificação)
 
 **Ambiente**: `PowerShell`
 
 1. **Instalar o Docker**:
 
-    Antes de começar, certifique-se de que o Docker está instalado no seu sistema. Se ainda não estiver, siga os passos abaixo:
+    Certifique-se de que o Docker está instalado no seu sistema. Se ainda não estiver, siga os passos abaixo:
     - Visite o [site oficial do Docker](https://www.docker.com/get-started) e baixe a versão correspondente ao seu sistema operacional.
     - Siga as instruções de instalação fornecidas pelo site.
     - Após a instalação, verifique se o Docker está funcionando corretamente executando o comando:
    <br>
-
+   
     ```powershell
     docker --version
     ```
@@ -75,9 +81,7 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 
 9. **Acessar a Instância do Judge0 CE**:
 
-    Sua instância do Judge0 CE v1.13.1 está agora em funcionamento. Para acessar a documentação e testar a API, visite: [http://localhost:2358/docs](http://localhost:2358/docs).
-
-
+    Sua instância do Judge0 CE v1.13.1 está em funcionamento. Para acessar a documentação e testar a API, visite: [http://localhost:2358/docs](http://localhost:2358/docs).
 
 ---
 
