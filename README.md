@@ -3,6 +3,7 @@
 
 [Licença MIT do Projeto](./LICENSE) (alterar depois)
 
+
 ## Acesso Rápido:
 
 - [APIs Utilizadas](#apis-utilizadas) <br>
