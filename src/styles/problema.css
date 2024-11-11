@@ -1,0 +1,133 @@
+:root {
+    --header-height: 3.2rem;
+    --nav-width: 68px;
+    --first-color: #4723D9;
+    --first-color-light: #AFA5D9;
+    --white-color: #F7F6FB;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100;
+    --color-background: #161530;
+    --color-black: #ffffff;
+    --color-blackk: #6325ce;
+    --color-black-heavy: #000000;
+    --color-text: #4f4f4f;
+    --color-text-out: #90908e;
+    --color-primary: #1fc47a;
+    --color-green-black: #19945c;
+    --color-secondary: #fff2cc;
+    --color-white: #ffffff;
+    --color-red: #e74c3c;
+    --color-green: #2ecc71;
+    --color-separate: #cccccc;
+}
+.principal {
+    display: flex;
+    margin-top: 0px;
+    padding-top: 10px;
+    overflow: hidden;
+    height: calc(100vh - 68px); /* 100vh é a altura total da tela, subtraída das margens e do padding */
+}
+.panel {
+    flex-grow: 1;
+    overflow: auto;
+    box-sizing: border-box;
+}
+#panel1{
+    max-width: 60%; /* Limite máximo para evitar ultrapassagem */
+    padding: 20px;
+    background-color: #161530;
+    border-top-left-radius: 20px;
+}
+#panel2{
+    background-color: rgb(21, 19, 32);
+    border-top-right-radius: 20px;
+}
+.gutter {
+    width: 12px;
+    position: relative;
+    background-color: #131313;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: ew-resize;
+}
+.CodeMirror {
+    height: 100%;
+    width: 20%;
+    border-radius: 8px;
+}
+
+.entrada{
+    margin: 0px;
+    padding: 0px;
+}
+
+.entrada i{
+    color:aliceblue;
+    font-size: 18px;
+}
+.entrada .input-group select{
+    background-color: #161530;
+    color: var(--white-color);
+    border: var(--color-background);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.entrada .input-group-text{
+    background-color: var(--color-blackk);
+    border: var(--color-background);
+}
+
+.entrada .btn-success{
+    background-color: var(--color-primary);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.btn-group .btn-warning{
+    border-top-left-radius: 20px;
+}
+
+.btn-group{
+    display: flex;
+}
+
+.entrada .btn-danger{
+    border-radius: 100%;
+}
+.info-questao{
+    text-align: center;
+}
+.info-questao .titulo{
+    font-weight: bold;
+    font-size: 36px;
+}
+.exemplos-saida pre{
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+}
+.panel .autor-info{
+    font-weight: 600;
+    color: #969696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel .desafio{
+    text-align: justify;
+    margin-top: 4px;
+}
+.executar{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.ferramentas{
+    margin: 0px 10px;
+}

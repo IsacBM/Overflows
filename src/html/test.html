@@ -3,113 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circular Progress Bar with Borders</title>
+    <title>Divisor Ajustável</title>
     <style>
         body {
             display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            margin: 0;
+            overflow: hidden;
         }
-
-        .progress-container {
+        .panel {
+            flex-grow: 1;
+            padding: 20px;
+            overflow: auto;
+        }
+        .gutter {
+            width: 12px;
             position: relative;
-            width: 150px;
-            height: 150px;
-        }
-
-        .progress-circle {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .circle-background {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            position: absolute;
-            clip: rect(0px, 150px, 150px, 75px);
-            background-color: #d3d3d3;
-        }
-
-        .mask {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            position: absolute;
-        }
-
-        .full,
-        .half {
-            clip: rect(0px, 75px, 150px, 0px);
-        }
-
-        .fill {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            position: absolute;
-            background-color: #4caf50;
-        }
-
-        .progress-inner {
-            position: absolute;
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #progress-text {
-            font-size: 24px;
-            font-weight: bold;
+            background-color: #131313;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            cursor: ew-resize;
         }
     </style>
 </head>
 <body>
-    <div class="progress-container">
-        <div class="progress-circle">
-            <div class="circle-background">
-                <div class="mask full" id="mask-full">
-                    <div class="fill" id="fill-full"></div>
-                </div>
-                <div class="mask half">
-                    <div class="fill" id="fill-half"></div>
-                </div>
-            </div>
-            <div class="progress-inner">
-                <span id="progress-text">0%</span>
-            </div>
-        </div>
-    </div>
-    <script>
-        function updateProgress(percentage) {
-            const fillFull = document.getElementById('fill-full');
-            const fillHalf = document.getElementById('fill-half');
-            const text = document.getElementById('progress-text');
-            
-            if (percentage <= 50) {
-                fillFull.style.transform = `rotate(${percentage * 3.6}deg)`;
-                fillHalf.style.transform = `rotate(0deg)`;
-            } else {
-                fillFull.style.transform = `rotate(180deg)`;
-                fillHalf.style.transform = `rotate(${(percentage - 50) * 3.6}deg)`;
-            }
-            
-            text.textContent = `${percentage}%`;
-        }
+    <div class="panel" id="panel1">Enunciado da Questão</div>
+    <div class="gutter" id="gutter"></div>
+    <div class="panel" id="panel2">Editor de Código</div>
 
-        // Exemplo de uso: 20 de 100 (20% completado)
-        updateProgress(90);
+    <script>
+        const gutter = document.getElementById('gutter');
+        const panel1 = document.getElementById('panel1');
+        const panel2 = document.getElementById('panel2');
+
+        gutter.addEventListener('mousedown', function(e) {
+            e.preventDefault();
+            
+            const startX = e.clientX;
+            const startPanel1Width = panel1.getBoundingClientRect().width;
+            const startPanel2Width = panel2.getBoundingClientRect().width;
+            const totalWidth = startPanel1Width + startPanel2Width;
+
+            function onMouseMove(e) {
+                const dx = e.clientX - startX;
+                const newPanel1Width = ((startPanel1Width + dx) / totalWidth) * 100;
+                const newPanel2Width = 100 - newPanel1Width;
+
+                if (newPanel1Width >= 10 && newPanel2Width >= 10) { // Limite mínimo de 10% para os painéis
+                    panel1.style.width = `${newPanel1Width}%`;
+                    panel2.style.width = `${newPanel2Width}%`;
+                }
+            }
+
+            function onMouseUp() {
+                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mouseup', onMouseUp);
+            }
+
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+        });
     </script>
 </body>
 </html>
