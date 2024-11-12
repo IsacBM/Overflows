@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>CaisCode - Lista de Questões </title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/src/imgs/favicon-caiscode.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/menu.css">
+    <link rel="stylesheet" href="/src/css/questoes.css">
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+</head>
+
+<body className='snippet-body'>
+
+    <body id="body-pd">
+
+        <header class="header" id="header">
+            <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+            <div class="logo-caistech">
+                <img src="/src/imgs/brand.png" width="72px" alt="">
+            </div>
+            <div class="toggle">
+                <input type="checkbox" />
+                <label></label>
+            </div>
+              
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+
+            <nav class="nav">
+                <div> 
+                  <a href="#" class="nav_logo"> <i class='bx bx-equalizer nav_logo-icon'></i> <span class="nav_logo-name">CaisCode</span> </a>
+                    <div class="nav_list">
+                    <a href="/inicio" class="nav_link">
+                            <i class='bx bx-grid-alt nav_icon'></i>
+                            <span class="nav_name">Inicio</span>
+                        </a>
+
+                        <a href="/classificacao" class="nav_link">
+                            <i class='bx bx-trophy nav_icon'></i>
+                            <span class="nav_name">Classificações</span>
+                        </a>
+
+                        <a href="/questoes" class="nav_link active">
+                            <i class='bx bxs-balloon nav_icon'></i>
+                            <span class="nav_name">Questões</span>
+                        </a>
+                        <a href="/editor" class="nav_link">
+                            <i class='bx bx-terminal nav_icon'></i>
+                            <span class="nav_name">Editor</span>
+                        </a>
+                        <a href="/error" class="nav_link">
+                            <i class='bx bx-joystick nav_icon'></i>
+                            <span class="nav_name">Eventos</span>
+                        </a>
+                        <a href="/biblioteca" class="nav_link">
+                            <i class='bx bx-coffee nav_icon'></i>
+                            <span class="nav_name">Bibliotecas</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="login.html" class="nav_link">
+                    <i class='bx bx-log-out nav_icon'></i>
+                    <span class="nav_name">Sair</span>
+                </a>
+            </nav>
+
+        </div>
+
+        <!--Container Main start-->
+        <div class="principalContainer">
+            <div class="row conteudoPagina">
+                <div class="col dados-equipe">
+                    <div class="grafico-questoes">
+
+                        <div class="barra-de-progresso less" style="--color: #6325ce; --value:40"><!-- O less funciona do 50 para baixo, quando passar pode apagar o less, ou seja qtn pontos < 50, utiliza o less, caso a qtn de respostas for > 50 tira o less e deixa só a barra-->
+                            <h3>40<span>%</span></h3>
+                            <p>Finalizado</p>
+                        </div>
+                    </div>
+
+                    <div class="rank-semanal">
+                        <div class="titulo-rank">
+                            <h4>Top 3 - Rank</h4>
+                        </div>
+                        <div class="equipe1 equipes">
+                            <img src="/src/imgs/medalha-ouro.png" alt="">
+                            <span><a href="#"><span id="equipe-semanal1">Overflows</span></a> - </span>
+                            <span>100 Pts</span>
+                        </div>
+                        <div class="equipe2 equipes">
+                            <img src="/src/imgs/medalha-prata.png" alt="">
+                            <span><a href="#"><span id="equipe-semanal1">Fulanos</span></a> - </span>
+                            <span>90 Pts</span>
+                        </div>
+                        <div class="equipe3 equipes">
+                            <img src="/src/imgs/medalha-bronze.png" alt="">
+                            <span><a href="#"><span id="equipe-semanal1">Sicranos</span></a> - </span>
+                            <span>70 Pts</span>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="submissoes">
+                        <span class="erro-alert"><i class='bx bx-error'></i></span>
+                        <span>Envios Incorretos</span>
+                        <span class="erros"><span>26</span>/10</span>
+                    </div>
+                    
+                </div>
+
+                <div class="col lista-de-questoes">
+                    <div class="questao">
+                        <a href="/problema/1"><h2>Dê um Oii para a Plataforma!</h2></a>
+                        <p>Crie um código simples na linguagem que preferir para cumprimentar a plataforma!🖖🏽</p>
+                        <div class="info-questoes">
+
+                            <div class="info-pessoas">
+                                <div class="criador">
+                                    <span title="Criador"><i class='bx bxs-id-card'></i> <a href="#"><span>Por IsacBM</span></a></span>
+                                </div>
+                                <span title="Envios Corretos"><i class='bx bxs-paper-plane'></i> <span class="respostas">350</span> Envios Corretos</span>
+                            </div>
+                            
+                            <div class="infos-gerais">
+                                <div class="tags">
+                                    <span class="tag">Boas Vindas</span>
+                                </div>
+                                <div class="nivel facil">
+                                    <span>Fácil</span>
+                                </div>
+                                <div class="qtn-pontos">
+                                    <span>+5 pts</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="questao">
+                        <a href="/questaoAngryDucks/3"><h2>Angry Ducks</h2></a>
+                        <p>Ajude os Duckneses a ganhar a guerra contra os Nlogoneses através de um código e patos!🦆⚔️</p>
+                        <div class="info-questoes">
+
+                            <div class="info-pessoas">
+                                <div class="criador">
+                                    <span title="Criador"><i class='bx bxs-id-card'></i> <a href="#"><span>Por IsacBM</span></a></span>
+                                </div>
+                                <span title="Envios Corretos"><i class='bx bxs-paper-plane'></i> <span class="respostas">130</span> Envios Corretos</span>
+                            </div>
+                            
+                            <div class="infos-gerais">
+                                <div class="tags">
+                                    <span class="tag">Matématica</span>
+                                </div>
+                                <div class="nivel intermediario">
+                                    <span>Intermédiario</span>
+                                </div>
+                                <div class="qtn-pontos">
+                                    <span>+25 pts</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="questao">
+                        <a href="/questaotelefone/1"><h2>Digitando no Telefone Celular</h2></a>
+                        <p>Pesquisadores precisam da sua genialidade para construir uma nova tecnologia!👩🏽‍🔬🔍</p>
+                        <div class="info-questoes">
+
+                            <div class="info-pessoas">
+                                <div class="criador">
+                                    <span title="Criador"><i class='bx bxs-id-card'></i> <a href="#"><span>Por IsacBM</span></a></span>
+                                </div>
+                                <span title="Envios Corretos"><i class='bx bxs-paper-plane'></i> <span class="respostas">21</span> Envios Corretos</span>
+                            </div>
+                            
+                            <div class="infos-gerais">
+                                <div class="tags">
+                                    <span class="tag">Strings</span>
+                                </div>
+                                <div class="nivel dificil">
+                                    <span>Dificil</span>
+                                </div>
+                                <div class="qtn-pontos">
+                                    <span>+50 pts</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+        <!--Container Main end-->
+        <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+        <script type='text/javascript'>
+            document.addEventListener("DOMContentLoaded", function(event) {
+
+                const showNavbar = (toggleId, navId, bodyId, headerId) => {
+                    const toggle = document.getElementById(toggleId),
+                        nav = document.getElementById(navId),
+                        bodypd = document.getElementById(bodyId),
+                        headerpd = document.getElementById(headerId)
+
+                    // Validate that all variables exist
+                    if (toggle && nav && bodypd && headerpd) {
+                        toggle.addEventListener('click', () => {
+                            // show navbar
+                            nav.classList.toggle('show')
+                            // change icon
+                            toggle.classList.toggle('bx-x')
+                            // add padding to body
+                            bodypd.classList.toggle('body-pd')
+                            // add padding to header
+                            headerpd.classList.toggle('body-pd')
+                        })
+                    }
+                }
+
+                showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+                /*===== LINK ACTIVE =====*/
+                const linkColor = document.querySelectorAll('.nav_link')
+
+                function colorLink() {
+                    if (linkColor) {
+                        linkColor.forEach(l => l.classList.remove('active'))
+                        this.classList.add('active')
+                    }
+                }
+                linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+                // Your code to run since DOM is loaded and ready
+            });
+        </script>
+        <script type='text/javascript'>
+            var myLink = document.querySelector('a[href="#"]');
+            myLink.addEventListener('click', function(e) {
+                e.preventDefault();
+            });
+        </script>
+
+    </body>
+
+</html>

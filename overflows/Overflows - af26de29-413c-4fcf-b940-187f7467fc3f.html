@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://127.0.0.1:8000/submit -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflows - af26de29-413c-4fcf-b940-187f7467fc3f</title>
+    <style>
+        
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #161530;
+            color: #fff;
+        }
+        .container { 
+            display: flex;
+            
+        }
+        .result { 
+            color: #5bc0de; 
+        }
+        .btn { 
+            display: inline-block; 
+            padding: 10px 20px; 
+            margin-top: 20px; 
+            background: rgb(7, 189, 53); 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 5px; 
+        }
+        .container-infos-code{
+            display: block;
+        }
+        .container-infos-code .status, .time, .memory{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .container-info{
+            text-align: center;
+        }
+        #aceito{
+            background-color: rgb(7, 189, 53);
+            padding: 5px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-weight: bold;
+        }
+        #info-name{
+            font-weight: bold;
+            text-decoration: underline 2px;
+        }
+        .icon i{
+            font-size: 50px;
+        }
+        #time-color{
+            background-color: #007bff;
+            padding: 5px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-weight: bold;
+        }
+        #memory-color{
+            background-color: #a1047f;
+            padding: 5px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-infos-code">
+            <div class="status">
+                <p id="info-name">Status</p>
+                <span class="icon"><i class="bi bi-check-lg"></i></span>
+                <p><span id="aceito">Accepted</span></p>
+            </div>
+            <div class="time">
+                <p id="info-name">Tempo</p>
+                <span class="icon"><i class="bi bi-hourglass-split"></i></span>
+                <p id="time-color">0.071s</p>
+            </div>
+            
+            <div class="memory">
+                <p id="info-name">Memória</p>
+                <span class="icon"><i class="bi bi-memory"></i></span>
+                <p id="memory-color">3676 bytes</p>
+            </div>
+        </div>
+        <div class="container-info">
+            <h1>Seja-bem vindo(a) a plataforma Overflows!!</h1>
+            <img src="/public/src/assets/Birthday-Cake-Party-With-Balloon-Cartoon-Graphics-39525791-1-1-580x387-removebg-preview.png" alt="" width="480px">
+            <h2>Questão concluida! Continue assim!! :)</h2>
+            <a href="http://127.0.0.1:8000/testapi" class="btn">Mais Questões</a>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

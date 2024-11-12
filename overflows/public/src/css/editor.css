@@ -1,0 +1,117 @@
+:root {
+    --header-height: 3.2rem;
+    --nav-width: 68px;
+    --first-color: #4723D9;
+    --first-color-light: #AFA5D9;
+    --white-color: #F7F6FB;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100;
+    --color-background: #161530;
+    --color-black: #ffffff;
+    --color-blackk: #6325ce;
+    --color-black-heavy: #000000;
+    --color-text: #4f4f4f;
+    --color-text-out: #90908e;
+    --color-primary: #1fc47a;
+    --color-green-black: #19945c;
+    --color-secondary: #fff2cc;
+    --color-white: #ffffff;
+    --color-red: #e74c3c;
+    --color-green: #2ecc71;
+    --color-separate: #cccccc;
+}
+
+*{
+    background-color: --;
+}
+.row {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+}
+.entrada {
+    flex: 3; /* Aumenta o tamanho da área do editor */
+}
+.entra-saida {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-top: 10px;
+}
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    flex: 1;
+    resize: none;
+}
+.CodeMirror {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.entrada i{
+    color:aliceblue;
+    font-size: 18px;
+}
+.entrada .input-group select{
+    background-color: #161530;
+    color: var(--white-color);
+    border: var(--color-background);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.entrada .input-group-text{
+    background-color: var(--color-blackk);
+    border: var(--color-background);
+}
+.entrada .btn-success{
+    background-color: var(--color-primary);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.btn-group .btn-warning{
+    border-top-left-radius: 20px;
+}
+
+.entrada .btn-danger{
+    border-radius: 100%;
+}
+
+.conteudo-central{
+    background-color: #0d0c1b;
+    border-radius: 10px;
+    margin-top: 80px;
+    padding: 0px;
+    box-shadow: 0px 0px 10px #161530;
+}
+
+.caixas-laterais .custom-textarea{
+    background-color: #161424;
+    color: var(--color-white);
+    border: #000000;
+    box-shadow: 0px 0px 4px #4723D9;
+}
+
+.text-light{
+    font-weight: bold;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.custom-textarea::placeholder{
+    color: var(--color-text-out);
+}
+

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>CaisCode - Editor</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="/src/imgs/favicon-caiscode.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/styles/menu.css">
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="/codemirror-5.65.17/lib/codemirror.css">
+    <script src="/codemirror-5.65.17/lib/codemirror.js"></script>
+    <script src="/codemirror-5.65.17/mode/python/python.js"></script>
+    <script src="/codemirror-5.65.17/mode/clike/clike.js"></script>
+    <script src="/codemirror-5.65.17/mode/"></script>
+    <script src="/codemirror-5.65.17/mode/php/"></script>
+    <link rel="stylesheet" href="/codemirror-5.65.17/theme/material-darker.css">
+    <link rel="stylesheet" href="/src/themes/mocha.css">
+    <script src="/codemirror-5.65.17/addon/edit/closebrackets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/lint/lint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/lint/python-lint.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/lint/lint.min.css">
+    <link rel="stylesheet" href="/public/src/css/editor.css">
+  </head>
+
+
+
+    <body id="body-pd">
+
+        <header class="header" id="header">
+            <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+            <div class="logo-caistech">
+                <img src="/src/imgs/brand.png" width="72px" alt="">
+            </div>
+            <div class="toggle">
+                <input type="checkbox" />
+                <label></label>
+            </div>
+              
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+
+            <nav class="nav">
+                <div> 
+                  <a href="#" class="nav_logo"> <i class='bx bx-equalizer nav_logo-icon'></i> <span class="nav_logo-name">CaisCode</span> </a>
+                    <div class="nav_list">
+                        <a href="#" class="nav_link">
+                            <i class='bx bx-grid-alt nav_icon'></i>
+                            <span class="nav_name">Inicio</span>
+                        </a>
+
+                        <a href="#" class="nav_link">
+                            <i class='bx bx-trophy nav_icon'></i>
+                            <span class="nav_name">Classificações</span>
+                        </a>
+
+                        <a href="#" class="nav_link">
+                            <i class='bx bxs-balloon nav_icon'></i>
+                            <span class="nav_name">Questões</span>
+                        </a>
+                        <a href="#" class="nav_link active">
+                            <i class='bx bx-terminal nav_icon'></i>
+                            <span class="nav_name">Editor</span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <i class='bx bx-joystick nav_icon'></i>
+                            <span class="nav_name">Eventos</span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <i class='bx bx-coffee nav_icon'></i>
+                            <span class="nav_name">Bibliotecas</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="nav_link">
+                    <i class='bx bx-log-out nav_icon'></i>
+                    <span class="nav_name">Sair</span>
+                </a>
+            </nav>
+
+        </div>
+
+        <!--Container Main start-->
+        <div class="principal">
+
+            <div class="row conteudo-central">
+                <div class="col entrada">
+                  <textarea type="text" id="editor" class="form-control" aria-label="Editor de Código"></textarea>
+                  <div class="d-flex justify-content-between mt-2">
+                    <div class="input-group col-12 w-25">
+                        <label class="input-group-text" for="inputGroupSelect01"><i class="bi bi-globe2"></i></label>
+                        <select class="form-select" id="inlineFormSelectPref">
+                            <option value="0" selected>Selecione sua linguagem...</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                        </select>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" title="Download do Código" id="downloadButton" class="btn btn-primary"><i class="bi bi-cloud-download"></i></button>
+                        <button type="button" title="Cópiar o Código" id="copyButton" class="btn btn-secondary"><i class="bi bi-copy"></i></button>
+                        <button type="button" title="Limpar o Editor" id="clearButton" class="btn btn-warning"><i class="bi bi-recycle"></i></button>
+                    </div>
+
+                    <div class="">
+                        <!--<button type="button" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>-->
+                        <button type="button" title="Debug **Inativo**" class="btn btn-danger"><i class="bi bi-bug"></i></button>
+                        <button type="button" class="btn btn-success"><i class="bi bi-play-fill"></i> Executar</button>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="caixas-laterais col d-flex flex-column rounded">
+                    <div class="h-50">
+                        <label for="Input" class="text-light mt-2 mb-2">Entrada(s):</label>
+                        <textarea type="text" class="form-control h-75 custom-textarea" placeholder="Digite os valores..." aria-label="Valores..."></textarea>
+                    </div>
+                    <div class="h-50">
+                        <label for="Input" class="text-light mb-2">Saída(s):</label>
+                        <textarea type="text" class="form-control h-75 custom-textarea" placeholder="..." aria-label="Last name"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+
+        </div>
+        <!--Container Main end-->
+        <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+        <script type='text/javascript'>
+            document.addEventListener("DOMContentLoaded", function(event) {
+
+                const showNavbar = (toggleId, navId, bodyId, headerId) => {
+                    const toggle = document.getElementById(toggleId),
+                        nav = document.getElementById(navId),
+                        bodypd = document.getElementById(bodyId),
+                        headerpd = document.getElementById(headerId)
+
+                    // Validate that all variables exist
+                    if (toggle && nav && bodypd && headerpd) {
+                        toggle.addEventListener('click', () => {
+                            // show navbar
+                            nav.classList.toggle('show')
+                            // change icon
+                            toggle.classList.toggle('bx-x')
+                            // add padding to body
+                            bodypd.classList.toggle('body-pd')
+                            // add padding to header
+                            headerpd.classList.toggle('body-pd')
+                        })
+                    }
+                }
+
+                showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header')
+
+                /*===== LINK ACTIVE =====*/
+                const linkColor = document.querySelectorAll('.nav_link')
+
+                function colorLink() {
+                    if (linkColor) {
+                        linkColor.forEach(l => l.classList.remove('active'))
+                        this.classList.add('active')
+                    }
+                }
+                linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+            });
+        </script>
+        <script type='text/javascript'>
+            var myLink = document.querySelector('a[href="#"]');
+            myLink.addEventListener('click', function(e) {
+                e.preventDefault();
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            // Mapeamento das linguagens para o CodeMirror
+            const languagesMode = {
+                Javascript: "javascript",
+                Python: "python",
+                Java: "text/x-java",
+                Ruby: "text/x-ruby",
+                Php: "application/x-httpd-php",
+                cpp: "text/x-c++src",
+                c: "text/x-csrc",
+            };
+        
+            // Exemplos de código para cada linguagem
+            const languagesHelloWorld = {
+                c: '// CaisTech♥ - 2K26 - C v17\n#include <stdio.h>\nint main() {\n    printf("É o melhor e maior evento de tecnologia do sul do Piauí!");\n    return 0;\n}\n',
+                cpp: '// CaisTech♥ - 2K26 - C++ v20\n#include <iostream>\nint main() {\n    std::cout << "É o melhor e maior evento de tecnologia do sul do Piauí!" << std::endl;\n    return 0;\n}\n',
+                Java: '// CaisTech♥ - 2K26 - Java 8\nclass Main {\n    public static void main(String[] args) {\n        System.out.println("É o melhor e maior evento de tecnologia do sul do Piauí!");\n    }\n}\n',
+                Python: '# CaisTech♥ - 2K26 - Python 3.12.4\ndef caisTech():\n    print("É o melhor e maior evento de tecnologia do sul do Piauí!")\ncaisTech()\n',
+                0: '',
+            };
+        
+            // Configurações de indentação para cada linguagem
+            const languagesConfig = {
+                c: { indentUnit: 4 },
+                cpp: { indentUnit: 4 },
+                Java: { indentUnit: 4 },
+                Python: { indentUnit: 4 },
+            };
+        
+            // Inicializa o editor CodeMirror sem um modo definido
+            var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+                lineNumbers: true,
+                readOnly: true,
+                theme: "ctp-mocha",
+                scrollbarStyle: "null",
+                autoCloseBrackets: true,
+                gutters: ["CodeMirror-lint-markers"],
+                lint: true
+            });
+
+            const extensionsMap = {
+                Python: 'py',
+                Java: 'java',
+                C: 'c',
+                "C++": 'cpp',
+            };
+
+            const fileNames = {
+                Python: "programa.py",
+                Java: "Main.java",
+                C: "main.c",
+                "C++": "main.cpp",
+            };
+        
+            function adjustEditorSize() {
+                var width = window.innerWidth;
+                editor.setSize('auto', '470'); 
+            }
+        
+            adjustEditorSize();
+            window.onresize = adjustEditorSize;
+        
+            // Função para configurar a linguagem no editor
+            function setupLanguage(language, force = false) {
+                if (language !== "null") {
+                    editor.setOption("mode", languagesMode[language]);
+                    editor.setOption("readOnly", false);
+                    editor.setOption("indentUnit", languagesConfig[language]?.indentUnit || 4);
+                    if (editor.getValue().length === 0 || force) {
+                        editor.setValue(languagesHelloWorld[language]);
+                    }
+                    console.log(`Changed Language to: ${language}:${editor.getOption("mode")} Indentation: ${editor.getOption("indentUnit")}`);
+                } else {
+                    editor.setOption("readOnly", true);
+                }
+            }
+        
+            // Configura o seletor de linguagem
+            const languageSelector = document.getElementById("inlineFormSelectPref");
+            if (languageSelector) {
+                languageSelector.addEventListener("change", (event) => {
+                    const language = event.target.value;
+                    setupLanguage(language, true);
+                });
+            }
+        
+            // Função para limpar o conteúdo do editor
+            function clearEditorContent() {
+                editor.setValue('');
+            }
+        
+            // Adicionar evento de clique ao botão para limpar o editor
+            document.getElementById("clearButton").addEventListener("click", clearEditorContent);
+        
+            // Função para copiar o conteúdo do editor para a área de transferência
+            function copyEditorContent() {
+                // Obter o conteúdo do editor
+                var content = editor.getValue();
+        
+                // Usar a API de área de transferência do navegador
+                navigator.clipboard.writeText(content).then(function() {
+                    alert("O código foi copiado com sucesso! :)");
+                }).catch(function(err) {
+                    alert("Erro ao copiar: ", err);
+                });
+            }
+        
+            // Adicionar evento de clique ao botão para copiar o conteúdo do editor
+            document.getElementById("copyButton").addEventListener("click", copyEditorContent);
+
+            // Função para baixar o conteúdo do editor
+            document.getElementById("downloadButton").addEventListener("click", function() {
+                const selectedLanguage = languageSelector.options[languageSelector.selectedIndex].text;
+                const fileName = fileNames[selectedLanguage] || "programa.py";
+                const fileContent = editor.getValue();
+                const element = document.createElement("a");
+                element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(fileContent));
+                element.setAttribute("download", fileName);
+                element.style.display = "none";
+                document.body.appendChild(element);
+                element.click();
+                document.body.removeChild(element);
+            });
+        </script>
+        
+    </body>
+
+</html>

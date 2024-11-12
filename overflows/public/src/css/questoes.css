@@ -1,0 +1,201 @@
+:root{
+    --bg-secundario: #161424;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    column-gap: 10px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 6.6px;
+    border-radius: 20px;
+}
+.lista-de-questoes {
+    flex:3.4; /* Aumenta o tamanho da área do editor */
+    margin-right: 10px;
+}
+
+.principalContainer{
+    margin-top: 78px;
+}
+.dados-equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+.dados-equipe, .lista-de-questoes{
+    background-color: var(--bg-secundario);
+}
+
+.dados-equipe .rank-semanal .titulo-rank, .titulo-rank h4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dados-equipe .rank-semanal .equipes a{
+    color: #6325ce;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline 1.5px;
+}
+
+.dados-equipe .rank-semanal{
+    background: #161530;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: #1f1f44 0px 0px 20px;
+    font-weight: bold;
+}
+
+.dados-equipe .submissoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161530;
+    border-radius: 100%;
+    padding: 28px 20px;
+    border: 6px solid #ee2a34;
+    box-shadow: 0px 0px 18px #ee2a34;
+}
+.dados-equipe .submissoes .erros{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dados-equipe .submissoes .erro-alert{
+    color: #ee2a34;
+    font-size: 30px;
+    padding: 0px;
+    text-shadow: 0px 0px 10px #ee2a34;
+}
+
+.grafico-questoes .barra-de-progresso{
+    position: relative;
+    width: 164px;
+    height: 162px;
+    border-radius: 50%;
+    background: #161530 linear-gradient(to right, transparent 50%, var(--color) 0);
+    box-shadow: 0px 0px 18px #6325ce;
+}
+
+.grafico-questoes .barra-de-progresso h3{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.grafico-questoes .barra-de-progresso h3 span{
+    font-size: 1rem;
+}
+.grafico-questoes .barra-de-progresso p{
+    position: absolute;
+    top:  62%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color);
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.barra-de-progresso::before{
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+    background-color:  var(--color);
+    transform: rotate(calc(((var(--value) - 50) * 0.01turn)));
+}
+
+.barra-de-progresso::after{
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border-radius: 50%;
+    background-color: #0f172a;
+}
+
+.barra-de-progresso.less::before{
+    background-color: #0f172a;
+    transform: rotate(calc(((var(--value) - 0) * 0.01turn)));
+}
+
+.rank-semanal .equipe1 img, .equipe2 img, .equipe3 img{
+    height: 30px;
+}
+
+.questao{
+    background-color: #161530;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.questao h2{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #6325ce;
+}
+
+.info-questoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-questoes .info-pessoas .criador, .criador a{
+    color: #6325ce;
+    text-decoration: none;
+}
+
+.info-questoes .infos-gerais, .info-questoes .info-pessoas{
+    display: flex;
+    gap: 16px;
+    font-weight: bold;
+}
+
+.info-questoes .tags{
+    background-color: rgb(76, 76, 88);
+    padding: 4px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.info-questoes .nivel{
+    padding: 4px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.info-questoes .facil{
+    background-color: rgb(73, 196, 109);
+}
+.info-questoes .intermediario{
+    background-color: rgb(209, 181, 22);
+}
+.info-questoes .dificil{
+    background-color: rgb(206, 12, 22);
+
+}
+.info-questoes .qtn-pontos{
+    background-color: #351164;
+    padding: 4px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
