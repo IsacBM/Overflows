@@ -87,6 +87,17 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 
 ---
 
+## Laravel:
+
+1. **Iniciar os Serviços**:
+
+    Execute os comandos abaixo para iniciar o servidor local e aguarde alguns segundos para garantir que tudo esteja pronto:
+
+    ```powershell
+    php artisan serve
+    ```
+
+
 ## Componentes de Interface:
 
 ### • Página de Login:
