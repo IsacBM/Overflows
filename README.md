@@ -7,7 +7,6 @@
 ## Acesso Rápido:
 
 - [APIs Utilizadas](#apis-utilizadas) <br>
-- [Configuração do Judge0 CE](#configuração-do-judge0-ce-v1131-2024-04-18-passo-a-passo---api-de-verificação) <br>
 - [Colaboradores](#contribuidores)
 
 
@@ -34,9 +33,14 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 
 ---
 
-### Configuração do Judge0 CE v1.13.1 (2024-04-18): Passo a Passo - (API de Verificação)
 
-**Ambiente**: `PowerShell`
+## Configurações em relação ao Back-End:
+
+<details>
+ <summary>Judge0 CE v1.13.1 (2024-04-18): Passo a Passo - (API de Verificação)</summary>
+ <br>
+    
+  **Ambiente**: `PowerShell`
 
 1. **Instalar o Docker**:
 
@@ -94,9 +98,15 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 
     Sua instância do Judge0 CE v1.13.1 está em funcionamento. Para acessar a documentação e testar a API, visite: [http://localhost:2358/docs](http://localhost:2358/docs).
 
----
 
-## Laravel:
+</p> 
+</details>
+
+<details>
+ <summary>Framework Laravel - Passo a Passo Instalação e Configuração</summary>
+ <br>
+    
+  ## Laravel:
 
 1. **Iniciar os Serviços**:
 
@@ -105,6 +115,13 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
     ```powershell
     php artisan serve
     ```
+
+</p> 
+</details>
+
+---
+
+
 
 
 ## Componentes de Interface:
