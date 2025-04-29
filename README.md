@@ -17,10 +17,10 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 ### Links Importantes:
 
 | Aplicações       | Descrição                                                                                      | Link |
-|------------------|-----------------------------------------------------------------------------------------------|:----:|
-| ![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)         | Painel de gerenciamento de tarefas e etapas do projeto, utilizado para planejar e acompanhar o progresso. | [Acessar Trello](https://trello.com/invite/b/673e0929c5a08c4c2020f7d3/ATTI25eef743694811373f6d4af1c42fc05f5A5EC004/overflows-plataforma) |
+|:----------------:|-----------------------------------------------------------------------------------------------|:----:|
 | ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)             | Plataforma de design colaborativo utilizada para o desenvolvimento das interfaces e protótipos do projeto. | [Acessar Figma](https://www.figma.com/design/7KvFe5zj3b4og8Tm8tvXRI/Overflows--Plataforma?node-id=864-3896&t=8j7bmH85RYkQUSlo-1) |
-| ![Documentação](https://img.shields.io/badge/Documentação-Informações-blue?style=for-the-badge&logo=readthedocs&logoColor=white) | Documento com os requisitos funcionais e não funcionais, além das regras de negócio da aplicação. | [Em breve](https://) |
+| ![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)         | Painel de gerenciamento de tarefas e etapas do projeto, utilizado para planejar e acompanhar o progresso. | [Acessar Trello](https://trello.com/invite/b/673e0929c5a08c4c2020f7d3/ATTI25eef743694811373f6d4af1c42fc05f5A5EC004/overflows-plataforma) |
+| ![Documentação](https://img.shields.io/badge/Google%20Docs-4285F4.svg?style=for-the-badge&logo=Google-Docs&logoColor=white) | Documento com os requisitos funcionais e não funcionais, além das regras de negócio da aplicação. | [Em breve](https://) |
 
 
 ## APIs Utilizadas:
