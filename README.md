@@ -14,6 +14,15 @@
 ### Alterar depois:
 O Projeto **`CaisCode`** foi idealizado para a maratona de programação realizada durante o evento do CaisTech, promovido pelo IFPI - Campus Floriano. O objetivo principal do CaisCode é proporcionar um ambiente desafiador e colaborativo para estudantes de programação, incentivando o desenvolvimento de habilidades técnicas e a criatividade na resolução de problemas.
 
+### Links Importantes:
+
+| Aplicações | Site |
+| --- | :---: |
+| `Trello` | [https://trello.com/](https://trello.com/invite/b/673e0929c5a08c4c2020f7d3/ATTI25eef743694811373f6d4af1c42fc05f5A5EC004/overflows-plataforma) |
+| `Figma` | [https://www.figma.com/](https://www.figma.com/design/7KvFe5zj3b4og8Tm8tvXRI/Overflows--Plataforma?node-id=864-3896&t=8j7bmH85RYkQUSlo-1) |
+| `Doc. Requisitos` | https://open-meteo.com/ |
+| `Heatmap` | https://github.com/tbaeg/calendar-heatmap-mini |
+
 ## APIs Utilizadas:
 
 | Aplicações | Descrição | Em Uso | Site |
