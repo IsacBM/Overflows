@@ -1,7 +1,7 @@
-# Documentação: OverFlows
+# Documentação em Código: OverFlow
 > Status do Projeto: Em Andamento...
 
-[Licença MIT do Projeto](./LICENSE) (alterar depois)
+[Licença (DEFINIR) do Projeto](./LICENSE) (alterar depois)
 
 
 ## Acesso Rápido:
@@ -172,12 +172,9 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 ## Contribuidores:
 <div align="center">
  
-|  [<img src="https://avatars.githubusercontent.com/u/91500212?v=4" width=115><br><sub>Isac B. Matos</sub>](https://github.com/IsacBM) | [<img src="https://avatars.githubusercontent.com/u/179156654?v=4" width=115><br><sub>Kassandra Maria</sub>](https://github.com/KassandraMRabelo) | [<img src="https://avatars.githubusercontent.com/u/157860235?v=4" width=115><br><sub>Diogo Bruno</sub>](https://github.com/DiogoBramorim) | [<img src="https://avatars.githubusercontent.com/u/168697328?v=4" width=115><br><sub>Priscila Freitas</sub>](https://github.com/FreitasPriscila) |
-| :---: | :---: | :---: | :---: |
-
+|  [<img src="https://avatars.githubusercontent.com/u/91500212?v=4" width=115><br><sub>Isac B. Matos</sub>](https://github.com/IsacBM) | [<img src="https://avatars.githubusercontent.com/u/179156654?v=4" width=115><br><sub>Kassandra Maria</sub>](https://github.com/KassandraMRabelo) | [<img src="https://avatars.githubusercontent.com/u/157860235?v=4" width=115><br><sub>Diogo Bruno</sub>](https://github.com/DiogoBramorim) | [<img src="https://avatars.githubusercontent.com/u/168697328?v=4" width=115><br><sub>Priscila Freitas</sub>](https://github.com/FreitasPriscila) | [<img src="https://avatars.githubusercontent.com/u/49922915?v=4" width=115><br><sub>João Pedro</sub>](https://github.com/iaejotape) |
+| :---: | :---: | :---: | :---: |  :---: |
 
 </div>
 
-<h4 align="center">
-<strong>#CaisTech</strong>💙 <br>
-</h4>
+<h4 align="center"><strong>#Overflow</strong>💜 <br></h4>
