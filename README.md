@@ -33,8 +33,14 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 
 ---
 
+## Configurações em relação ao Front-End:
 
-## Configurações em relação ao Back-End:
+<details>
+ <summary>ReactJS: Passo a Passo Instalação e Configuração </summary>
+ <br>
+</details>
+
+## Configurações em relação as APIs:
 
 <details>
  <summary>Judge0 CE v1.13.1 (2024-04-18): Passo a Passo - (API de Verificação)</summary>
@@ -101,6 +107,8 @@ O Projeto **`CaisCode`** foi idealizado para a maratona de programação realiza
 
 </p> 
 </details>
+
+## Configurações em relação ao Back-End:
 
 <details>
  <summary>Framework Laravel - Passo a Passo Instalação e Configuração</summary>
